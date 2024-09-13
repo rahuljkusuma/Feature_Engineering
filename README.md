@@ -1,30 +1,16 @@
-# Feature_Engineering
+# Feature Engineering
 
-# Feature Engineering for Credit Risk Modelling
 
 ## Introduction
-Feature engineering is a critical step in building a robust **Credit Risk Model**. It involves creating new features or modifying existing ones to improve the predictive power of the model. In credit risk modelling, identifying the key features that influence a borrower’s likelihood of default is essential for assessing the risk associated with loans.
-
-This document outlines important feature engineering techniques commonly used in credit risk modelling.
+Feature engineering is a critical step in building a good **Credit Risk Model**. It involves creating new features or modifying existing ones to improve the predictive power of the model. While working in ABC, our team was planning to develop a score card and my manager asked me to do feature engineering for this model development. So I have followed below steps in feature engineering.
 
 ---
 
 ## 1. Data Preprocessing
 
-Before performing feature engineering, data must be cleaned and preprocessed. Key steps include:
-
-- **Handling Missing Values**: Missing data can distort model predictions. Common approaches include:
-  - Imputation using mean, median, or mode.
-  - Using specific indicators for missing values.
-  - Removing records with a significant proportion of missing data.
-  
-- **Encoding Categorical Variables**:
-  - **Label Encoding**: Assigning a numerical value to each category.
-  - **One-Hot Encoding**: Creating binary columns for each category in a feature.
-  
-- **Scaling Numerical Features**:
-  - **Standardization**: Scaling features to have mean 0 and standard deviation 1.
-  - **Normalization**: Scaling the values between 0 and 1.
+- **Handling Missing Values**: Missing data can effect the model predictions. So first I have removed records with large proportion of missing data and then did imputation using mean, median or mode.
+- **Encoding Categorical Variables**: Based on type of category I have used **Label Encoding** as well as **One-Hot Encoding**.
+- **Scaling Numerical Features**: For some features I have checked the distribution and found that they are normally distributed, so I have used **Standardization**. I would have used **Normalization** for scaling, if the data is not normally distributed and with many outliers.
   
 ---
 
